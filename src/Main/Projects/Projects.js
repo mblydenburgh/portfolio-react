@@ -5,7 +5,7 @@ const Projects = (props) => {
     return (
         <div>
             <h1>Projects</h1>
-            <Project title={"Munchies Metropolis"} imgUrl="../../Images/munchie.jpg" />
+            <Project title={"Munchies Metropolis"} imgUrl={"./../../Images/munchie.jpg"} />
         </div>
         );
 };
