@@ -1,13 +1,19 @@
 import React from 'react';
 import Project from './Project/Project';
+// import jsonData from '../../projects.json';
+const data = require('../../projects.json');
+
 
 const Projects = (props) => {
-    return (
-        <div>
-            <h1>Projects</h1>
-            <Project title={"Munchies Metropolis"} imgUrl={"./../../Images/munchie.jpg"} />
-        </div>
+    
+        return (
+            <ul>
+                {data.projects.map(project=>{
+                    return (<Project title={project.title} imgUrl={project.imgUrl} url={project.url} codeUrl={project.codeUrl} />)
+                })}
+            </ul>
         );
-};
+    };
+
 
 export default Projects;

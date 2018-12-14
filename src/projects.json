@@ -1,0 +1,69 @@
+{
+    "projects": [
+            {
+                "title": "Munchies Metropolis",
+                "url": "https://pgould94.github.io/Munchies_Metropolis",
+                "codeUrl":"https://github.com/pgould94/Munchies_Metropolis",
+                "imgUrl": "https://github.com/mikebly/mikebly.github.io/blob/master/assets/images/munchie.jpg?raw=true"
+            },
+            {
+                "title": "Pupperbase (Angular JS)",
+                "url": "https://mikebly.github.io/pupperbase",
+                "codeUrl":"https://github.com/mikebly/pupperbase",
+                "imgUrl": "https://github.com/mikebly/mikebly.github.io/blob/master/assets/images/pupper.jpg?raw=true"
+            },
+            {
+                "title": "Rock Paper Scissors (Cross Browser w/ Firebase)",
+                "url": "https://mikebly.github.io/RPS-MP",
+                "codeURL":"https://mikebly.github.io/RPS-MP",
+                "imgUrl": "https://github.com/mikebly/mikebly.github.io/blob/master/assets/images/rps.jpg?raw=true"
+            },
+            {
+                "title": "Trivia",
+                "url": "https://mikebly.github.io/trivia",
+                "codeUrl":"https://github.io/mikebly/trivia",
+                "imgUrl": "https://github.com/mikebly/mikebly.github.io/blob/master/assets/images/trivia.jpg?raw=true"
+            },
+            {
+                "title": "Giphy Goodness",
+                "url": "https://mikebly.github.io/giphy-goodness",
+                "codeUrl":"http://github.com/mikebly/giphy-goodness",
+                "imgUrl": "https://github.com/mikebly/mikebly.github.io/blob/master/assets/images/giphy.jpg?raw=true"
+            },
+            {
+                "title": "TSA Luggage Analysis (Angular JS)",
+                "url": "https://mikebly.github.io/tsa-luggage-analysis",
+                "codeUrl":"https://github.com/mikebly/tsa-luggage-analysis",
+                "imgUrl": "https://github.com/mikebly/mikebly.github.io/blob/master/assets/images/claims.jpg?raw=true"
+            },
+            {
+                "title": "Star Wars Battle",
+                "url": "https://mikebly.github.io/unit-4-game",
+                "codeUrl":"https://github.io/mikebly/unit-4-game",
+                "imgUrl": "https://github.com/mikebly/mikebly.github.io/blob/master/assets/images/starwars.jpg?raw=true"
+            },
+            {
+                "title": "Color Game",
+                "url": "https://mikebly.github.io/Color-Game",
+                "codeUrl":"https://github.com/mikebly/Color-Game",
+                "imgUrl": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1780363/colorgame.jpg"
+            },
+            {
+                "title": "To Do",
+                "url": "https://mikebly.github.io/to-do",
+                "codeUrl":"https://github.com/mikebly/to-do",
+                "imgUrl": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1780363/todo.jpg"
+            },
+            {
+                "title": "Quote Machine",
+                "url": "https://codepen.io/mikebly/live/pVMobb",
+                "imgUrl": "https://s3-us-west-2.amazonaws.com/i.cdpn.io/1780363.pVMobb.19b810bf-0672-48df-8e9d-6bc95b8df4ac.png"
+            },
+            {
+                "title": "Weather App",
+                "url": "https://codepen.io/mikebly/live/Gdabzo",
+                "codeUrl":"https://github.com/mikebly/min-weather",
+                "imgUrl": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1780363/minweather.jpg"
+            }
+            ]
+}
