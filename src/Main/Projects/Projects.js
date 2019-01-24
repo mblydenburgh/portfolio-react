@@ -1,19 +1,30 @@
 import React from 'react';
 import Project from './Project/Project';
-// import jsonData from '../../projects.json';
+import Styled from 'styled-components'
+import M from 'materialize-css';
 const data = require('../../projects.json');
 
 
 const Projects = (props) => {
     
         return (
-            <ul>
+            <ProjectDiv>
                 {data.projects.map(project=>{
-                    return (<Project title={project.title} imgUrl={project.imgUrl} url={project.url} codeUrl={project.codeUrl} />)
+                    return (<Project title={project.title} imgUrl={project.imgUrl} url={project.url} codeUrl={project.codeUrl} />);
                 })}
-            </ul>
+            </ProjectDiv>
         );
     };
 
 
 export default Projects;
+
+const ProjectDiv = Styled.div`
+  background: #015249;
+  text-align: center;
+  color: white;
+  min-height:85vh;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto 1fr;  
+`;
