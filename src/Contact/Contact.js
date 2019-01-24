@@ -25,6 +25,6 @@ const ContactDiv = Styled.div`
   grid-gap: 20px;
 `;
 
-const ContactHeader = Styled.div`
+const ContactHeader = Styled.h1`
   grid-column:1/-1;
 `;

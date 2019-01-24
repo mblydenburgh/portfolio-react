@@ -7,7 +7,7 @@ const Main = (props) => {
     return(
         <div>
             <Welcome />
-            <Transition first />
+            <Transition number='first' height='30vh' />
             <Projects />
         </div>
         );
