@@ -1,9 +1,10 @@
+/* eslint default-case:0 */
 import React from 'react';
 import Styled from 'styled-components';
 
 const Transition = (props) => {
     return (
-        <TransitionDiv />
+        <TransitionDiv {...props}/>
     );
 };
 

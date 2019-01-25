@@ -20,9 +20,9 @@ class App extends Component {
       <div>
         <Nav />
         <Main />
-        <Transition />
+        <Transition number='second' height='30vh'/>
         <Contact />
-        <Transition />
+        <Transition number='third' height='10vh' />
         <Footer />
       </div>
     );
