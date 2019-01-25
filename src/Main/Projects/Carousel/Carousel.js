@@ -13,13 +13,14 @@ export default class Carousel extends Component {
             noWrap: true,
             dist: -50
         };
-        M.Carousel.init(carouselElement,carouselOptions);
-        const carouselInstance = M.Carousel.getInstance(carouselElement);
-        setTimeout(autoPlay,5000);
-        function autoPlay(){
-            carouselInstance.next();
-            setTimeout(autoPlay,5000);
-        }
+        console.log(carouselElement);
+        // M.Carousel.init(carouselElement,carouselOptions);
+        // const carouselInstance = M.Carousel.getInstance(carouselElement);
+        // setTimeout(autoPlay,5000);
+        // function autoPlay(){
+        //     carouselInstance.next();
+        //     setTimeout(autoPlay,5000);
+        // }
     }
 
     render(){
@@ -27,10 +28,12 @@ export default class Carousel extends Component {
           <div class="carousel carousel-slider">
             {this.data.map(project => {
                 return (
-                <CarouselItem {...this.props}>
-                    <h5>{project.title}</h5>
-                    <a href={project.codeUrl}>See the code!</a>
-                    <a href={project.url}>Check it out!</a>
+                <CarouselItem class="carousel-item" {...this.props}>
+                    <ItemDiv>
+                        <h5>{project.title}</h5>
+                        <a href={project.codeUrl}>See the code!</a>
+                        <a href={project.url}>Check it out!</a>
+                    </ItemDiv>
                 </CarouselItem>
                 );
             })}
@@ -41,5 +44,10 @@ export default class Carousel extends Component {
 
 
 const CarouselItem = Styled.a`
+    background:url(${props=>props.data.projects.imgUrl}) center center;
+`;
 
+const ItemDiv = Styled.div`
+  background: rgba(50,50,50,.8);
+  padding: 10px 0;
 `;
