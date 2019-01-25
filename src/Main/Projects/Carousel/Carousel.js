@@ -1,24 +1,45 @@
-import React from 'react'
-import Styled from 'styled-components'
+import React, { Component } from 'react';
+import Styled from 'styled-components';
+import M from 'materialize-css';
 
-const Carousel = (props) => {
-    const data = props.data.projects;
 
-    return(
-        data.map(project => {
-            return (
-            <CarouselItem {...props}>
-                <h5>{project.title}</h5>
-                <a href={project.codeUrl}>See the code!</a>
-                <a href={project.url}>Check it out!</a>
-            </CarouselItem>
-            )
-        })
-    )
+export default class Carousel extends Component {
+    data = this.props.data.projects;
+
+    componentDidMount(){
+        const carouselElement = document.querySelector('.carousel');
+        const carouselOptions = {
+            indicators: true,
+            noWrap: true,
+            dist: -50
+        };
+        M.Carousel.init(carouselElement,carouselOptions);
+        const carouselInstance = M.Carousel.getInstance(carouselElement);
+        setTimeout(autoPlay,5000);
+        function autoPlay(){
+            carouselInstance.next();
+            setTimeout(autoPlay,5000);
+        }
+    }
+
+    render(){
+      return(
+          <div class="carousel carousel-slider">
+            {this.data.map(project => {
+                return (
+                <CarouselItem {...this.props}>
+                    <h5>{project.title}</h5>
+                    <a href={project.codeUrl}>See the code!</a>
+                    <a href={project.url}>Check it out!</a>
+                </CarouselItem>
+                );
+            })}
+        </div>
+      );  
+    }
 }
 
-export default Carousel;
 
 const CarouselItem = Styled.a`
 
-`
+`;
