@@ -1,20 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Radium from 'radium';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Contact = (props) => {
+export default class Contact extends Component {
+render(){
+  const iconStyle = {
+    color: '#555',
+
+    ':hover':{
+      color: '#777'
+    }
+  }
+
     return (
         <ContactDiv>
             <ContactHeader>I would be happy to help, lets connect!</ContactHeader>
-            <a href="https://github.com/mikebly" className="contact-link" id="github">Github</a>
-            <a href="https://www.freecodecamp.org/mikebly" className="contact-link" id="profile-link" target="_blank" rel="noopener noreferrer">Free Code Camp</a>
-            <a href="https://codepen.io/mikebly/" className="contact-link" id="codepen">Codepen</a>
-            <a href="https://www.linkedin.com/in/michael-blydenburgh-99a68872/" className="contact-link" id="linkedin">LinkedIn</a>
+            <a href="https://github.com/mikebly" className="contact-link" id="github"><i key='1' class="fab fa-github fa-5x" style={iconStyle} /></a>
+            <a href="https://www.freecodecamp.org/mikebly" className="contact-link" id="profile-link" target="_blank" rel="noopener noreferrer"><i key='2' class="fab fa-free-code-camp fa-5x" style={iconStyle} /></a>
+            <a href="https://codepen.io/mikebly/" className="contact-link" id="codepen"><i key='3' class="fab fa-codepen fa-5x" style={iconStyle} /></a>
+            <a href="https://www.linkedin.com/in/michael-blydenburgh-99a68872/" className="contact-link" id="linkedin"><i key='4' class="fab fa-linkedin fa-5x" style={iconStyle} /></a>
          </ContactDiv>
         );
+}
 };
 
-export default Contact;
+// export default Contact;
+
+Contact = Radium(Contact);
 
 const ContactDiv = Styled.div`
   background-color:#77c9d4;

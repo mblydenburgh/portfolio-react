@@ -6,7 +6,7 @@ import Transition from './Transition/Transition';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faIgloo } from '@fortawesome/free-solid-svg-icons';
 
 

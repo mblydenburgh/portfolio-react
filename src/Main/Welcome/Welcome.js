@@ -1,6 +1,7 @@
 import React from 'react'
 import Styled from 'styled-components'
 
+
 const Welcome = (props) => {
     return (
         <WelcomeDiv>
