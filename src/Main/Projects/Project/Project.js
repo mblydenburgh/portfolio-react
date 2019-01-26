@@ -6,8 +6,8 @@ const Project = (props) => {
     return(
         <ProjectTile>
             <ProjectImage src={props.imgUrl} alt={props.title} />
-            <p class="project-title">{props.title}</p>
-            <a class="btn waves-effect" href={props.url} target="_blank" rel="noopener noreferrer">Check it out!</a>
+            <p className="project-title">{props.title}</p>
+            <a className="btn waves-effect" href={props.url} target="_blank" rel="noopener noreferrer">Check it out!</a>
         </ProjectTile>
         );
 };

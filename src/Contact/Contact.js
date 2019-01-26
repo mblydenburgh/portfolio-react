@@ -6,10 +6,10 @@ const Contact = (props) => {
     return (
         <ContactDiv>
             <ContactHeader>I would be happy to help, lets connect!</ContactHeader>
-            <a href="https://github.com/mikebly" class="contact-link" id="github">Github</a>
-            <a href="https://www.freecodecamp.org/mikebly" class="contact-link" id="profile-link" target="_blank" rel="noopener noreferrer">Free Code Camp</a>
-            <a href="https://codepen.io/mikebly/" class="contact-link" id="codepen">Codepen</a>
-            <a href="https://www.linkedin.com/in/michael-blydenburgh-99a68872/" class="contact-link" id="linkedin">LinkedIn</a>
+            <a href="https://github.com/mikebly" className="contact-link" id="github">Github</a>
+            <a href="https://www.freecodecamp.org/mikebly" className="contact-link" id="profile-link" target="_blank" rel="noopener noreferrer">Free Code Camp</a>
+            <a href="https://codepen.io/mikebly/" className="contact-link" id="codepen">Codepen</a>
+            <a href="https://www.linkedin.com/in/michael-blydenburgh-99a68872/" className="contact-link" id="linkedin">LinkedIn</a>
          </ContactDiv>
         );
 };
