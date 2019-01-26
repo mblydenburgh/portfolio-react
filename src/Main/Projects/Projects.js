@@ -14,8 +14,8 @@ const Projects = (props) => {
                 </CarouselDiv>
                 
                 <ProjectDiv>
-                    {data.projects.map(project=>{
-                        return (<Project title={project.title} imgUrl={project.imgUrl} url={project.url} codeUrl={project.codeUrl} />);
+                    {data.projects.map((project,key)=>{
+                        return (<Project key={key} title={project.title} imgUrl={project.imgUrl} url={project.url} codeUrl={project.codeUrl} />);
                     })}
                 </ProjectDiv>
             </div>

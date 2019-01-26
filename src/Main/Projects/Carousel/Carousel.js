@@ -14,21 +14,21 @@ export default class Carousel extends Component {
             dist: -50
         };
         console.log(carouselElement);
-        // M.Carousel.init(carouselElement,carouselOptions);
-        // const carouselInstance = M.Carousel.getInstance(carouselElement);
-        // setTimeout(autoPlay,5000);
-        // function autoPlay(){
-        //     carouselInstance.next();
-        //     setTimeout(autoPlay,5000);
-        // }
+        M.Carousel.init(carouselElement,carouselOptions);
+        const carouselInstance = M.Carousel.getInstance(carouselElement);
+        setTimeout(autoPlay,5000);
+        function autoPlay(){
+            carouselInstance.next();
+            setTimeout(autoPlay,5000);
+        }
     }
 
     render(){
       return(
-          <div class="carousel carousel-slider">
-            {this.data.map(project => {
+          <div className="carousel carousel-slider">
+            {this.data.map((project,key) => {
                 return (
-                <CarouselItem class="carousel-item" {...this.props}>
+                <CarouselItem key={key} className="carousel-item" {...this.props}>
                     <ItemDiv>
                         <h5>{project.title}</h5>
                         <a href={project.codeUrl}>See the code!</a>
@@ -43,7 +43,7 @@ export default class Carousel extends Component {
 }
 
 
-const CarouselItem = Styled.a`
+const CarouselItem = Styled.div`
     background:url(${props=>props.data.projects.imgUrl}) center center;
 `;
 
