@@ -7,18 +7,22 @@ const data = require('../../projects.json');
 
 const Projects = (props) => {
     
+    const h1Stlye = {
+        margin: 0
+    }
         return (
-            <div>
+            <ProjectDiv>
+                <h1 style={h1Stlye}>A Brief Portfolio</h1>
                 <CarouselDiv>
                     <Carousel data={data}/>
                 </CarouselDiv>
                 
-                <ProjectDiv>
+                <ProjectTiles>
                     {data.projects.map((project,key)=>{
                         return (<Project key={key} title={project.title} imgUrl={project.imgUrl} url={project.url} codeUrl={project.codeUrl} />);
                     })}
-                </ProjectDiv>
-            </div>
+                </ProjectTiles>
+            </ProjectDiv>
         );
 };
 
@@ -26,10 +30,13 @@ const Projects = (props) => {
 export default Projects;
 
 const ProjectDiv = Styled.div`
-  background: #015249;
-  text-align: center;
-  color: white;
-  min-height:85vh;
+    background: #015249;
+    min-height:85vh;
+    color: white;
+    text-align: center;
+`
+
+const ProjectTiles = Styled.div`
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: auto 1fr;
   display:none;
@@ -41,10 +48,12 @@ const ProjectDiv = Styled.div`
 
 const CarouselDiv = Styled.div`
   max-width: 75%;
-  height: 700px;
   justify-self: center;
   align-self: center;
   border-radius: 15px;
+  display: grid;
+  
+  margin:2rem auto 0 auto
   
   @media(min-width:550px) and (max-width:700px){
       display:none;

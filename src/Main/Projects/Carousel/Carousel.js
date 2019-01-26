@@ -24,15 +24,19 @@ export default class Carousel extends Component {
     }
 
     render(){
+
       return(
           <div className="carousel carousel-slider">
             {this.data.map((project,key) => {
+              const style = {
+                background:`url(${project.imgUrl}) center center`
+              }
                 return (
-                <CarouselItem key={key} className="carousel-item" {...this.props}>
+                <CarouselItem key={key} className="carousel-item" style={style}>
                     <ItemDiv>
                         <h5>{project.title}</h5>
-                        <a href={project.codeUrl}>See the code!</a>
-                        <a href={project.url}>Check it out!</a>
+                        <Button href={project.codeUrl}>See the code!</Button>
+                        <Button href={project.url}>Check it out!</Button>
                     </ItemDiv>
                 </CarouselItem>
                 );
@@ -42,12 +46,25 @@ export default class Carousel extends Component {
     }
 }
 
-
+//background:url(${props => props.data.projects.imgUrl}) center center;   
 const CarouselItem = Styled.div`
-    background:url(${props=>props.data.projects.imgUrl}) center center;
+  width:100%;
 `;
 
 const ItemDiv = Styled.div`
   background: rgba(50,50,50,.8);
   padding: 10px 0;
+  margin: 250px auto auto auto;
+  max-width: 75%;
+`;
+
+const Button = Styled.a`
+  color: white;
+  padding: 5px 1.5rem;
+  margin: auto .25rem;
+  background: rgba(100,100,100,.9);
+
+  &:hover {
+    color: #89ffcc;
+  }
 `;
