@@ -16,10 +16,10 @@ render(){
     return (
         <ContactDiv>
             <ContactHeader>I would be happy to help, lets connect!</ContactHeader>
-            <a href="https://github.com/mikebly" className="contact-link" id="github"><i key='1' class="fab fa-github fa-5x" style={iconStyle} /></a>
-            <a href="https://www.freecodecamp.org/mikebly" className="contact-link" id="profile-link" target="_blank" rel="noopener noreferrer"><i key='2' class="fab fa-free-code-camp fa-5x" style={iconStyle} /></a>
-            <a href="https://codepen.io/mikebly/" className="contact-link" id="codepen"><i key='3' class="fab fa-codepen fa-5x" style={iconStyle} /></a>
-            <a href="https://www.linkedin.com/in/michael-blydenburgh-99a68872/" className="contact-link" id="linkedin"><i key='4' class="fab fa-linkedin fa-5x" style={iconStyle} /></a>
+            <a href="https://github.com/mikebly" className="contact-link" id="github"><i key='1' className="fab fa-github fa-5x" style={iconStyle} /></a>
+            <a href="https://www.freecodecamp.org/mikebly" className="contact-link" id="profile-link" target="_blank" rel="noopener noreferrer"><i key='2' className="fab fa-free-code-camp fa-5x" style={iconStyle} /></a>
+            <a href="https://codepen.io/mikebly/" className="contact-link" id="codepen"><i key='3' className="fab fa-codepen fa-5x" style={iconStyle} /></a>
+            <a href="https://www.linkedin.com/in/michael-blydenburgh-99a68872/" className="contact-link" id="linkedin"><i key='4' className="fab fa-linkedin fa-5x" style={iconStyle} /></a>
          </ContactDiv>
         );
 }
