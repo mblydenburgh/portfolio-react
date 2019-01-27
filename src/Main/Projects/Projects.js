@@ -37,11 +37,11 @@ const ProjectDiv = Styled.div`
 `
 
 const ProjectTiles = Styled.div`
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   display:none;
   
-  @media(min-width:550px) and (max-width:700px){
+  @media(max-width:700px){
       display:grid;
   }
 `;
@@ -55,7 +55,7 @@ const CarouselDiv = Styled.div`
   
   margin:2rem auto 0 auto
   
-  @media(min-width:550px) and (max-width:700px){
+  @media(max-width:550px){
       display:none;
   }
 `;
