@@ -18,6 +18,11 @@ export default Nav;
 const NavDisplay = Styled.div`
     background-color: #57bc90;
     box-shadow: 0 3px 2px #57bc90;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 100;
 `;
 
 const NavUl = Styled.ul`
