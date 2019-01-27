@@ -11,7 +11,7 @@ export default class Carousel extends Component {
         const carouselOptions = {
             indicators: true,
             noWrap: true,
-            dist: -50
+
         };
         console.log(carouselElement);
         M.Carousel.init(carouselElement,carouselOptions);
